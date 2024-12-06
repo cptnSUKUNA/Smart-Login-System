@@ -1,0 +1,28 @@
+/** @format */
+::placeholder {
+	color: white !important;
+}
+input,
+textarea {
+	background-color: transparent !important;
+	color: white !important;
+}
+
+/* Style for input fields and icons */
+.input-group-text {
+	background-color: #24353f; /* Match input icon background with form */
+	color: white; /* White icons */
+}
+
+.form-control {
+	background-color: #24353f; /* Match background color of input fields */
+	color: white; /* Text color inside inputs */
+}
+
+.form-control:focus {
+	border-color: #17a2b8; /* Border color on focus */
+	box-shadow: 0 0 5px rgba(23, 162, 184, 0.5); /* Focus effect */
+}
+a:hover {
+	text-decoration: underline !important;
+}

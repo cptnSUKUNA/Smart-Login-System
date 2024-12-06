@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #17A2B8;
+    --secondary-color: #0D6E75;
+    --background-color: #24353F;
+    --text-light: #f8f9fa;
+    --warning-color: #ffc107;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.logout-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--primary-color);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--warning-color);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.signInForm {
+    padding: 2rem;
+}
+
+.card {
+    background-color: var(--background-color);
+}
+
+/* Full width logout button on expanded navbar */
+
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* This will make the logout button take full width on smaller screens */
+@media (max-width: 991px) {
+    .logout-btn {
+        width: 100%;
+    }
+}
