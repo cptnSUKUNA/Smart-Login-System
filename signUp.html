@@ -12,31 +12,42 @@
 
 <body class="min-vh-100" style="background-color: #24353F;">
 
-
-    <section class="card p-4 my-5 shadow-lg text-center w-50 mx-auto" style="background-color: #24353F;">
+    <section class="card p-4 my-5 shadow-lg text-center mx-auto col-10 col-sm-8 col-md-6 col-lg-4"
+        style="background-color: #24353F;">
         <div class="signInForm">
             <h1 class="py-3" style="color: #17A2B8;">Smart Login System</h1>
+
+            <!-- Name Input -->
             <div class="mb-3">
                 <input type="text" class="form-control p-3 fs-5" oninput="validation()" id="name"
                     placeholder="Enter Your Name" style="background-color: #24353F;" required>
+                <p class="lead my-3 fs-5 fw-bold d-none" style="color: red;" id="msgName">Invalid Name</p>
             </div>
-            <p class="lead my-3 fs-5 fw-bold d-none" style="color: red;" id="msgName">Invalid Name</p>
+
+            <!-- Email Input -->
             <div class="mb-3">
                 <input type="email" class="form-control p-3 fs-5" id="mail" placeholder="Enter Your E-mail"
                     style="background-color: #24353F;" required>
+                <p class="lead my-3 fs-5 fw-bold d-none" style="color: red;" id="msgMail">Invalid Email</p>
             </div>
-            <p class="lead my-3 fs-5 fw-bold d-none" style="color: red;" id="msgMail">Invalid Email</p>
+
+            <!-- Password Input -->
             <div class="mb-3">
-                <input type="password" class="form-control p-3 fs-5" id="password" placeholder="Enter Your password"
+                <input type="password" class="form-control p-3 fs-5" id="password" placeholder="Enter Your Password"
                     style="background-color: #24353F;" required>
+                <p class="lead my-3 fs-5 fw-bold d-none" style="color: red;" id="msgPassword">Invalid Password</p>
             </div>
-            <p class="lead my-3 fs-5 fw-bold d-none" style="color: red;" id="msgPassword">Invalid Password</p>
+
+            <!-- Sign Up Button -->
             <button type="button" class="btn btn-outline-info w-100 p-2 my-4" id="SignUp">Sign Up</button>
+
+            <!-- Sign In Link -->
             <h3 class="lead fw-bold" style="color: white;">You have an account?
                 <a href="index.html" class="fw-bold" style="text-decoration: none; color: #17A2B8;">Sign In</a>
             </h3>
         </div>
     </section>
+
 
 
 
